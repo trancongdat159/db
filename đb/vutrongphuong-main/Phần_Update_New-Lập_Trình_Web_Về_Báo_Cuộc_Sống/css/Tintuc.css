@@ -1,0 +1,159 @@
+:root {
+  --background: aqua;
+  --switch-toggie: rgb(44, 197, 197);
+  --transition-effect: cubic-bezier(1, -0.53, .38, 1.54).4s;
+}
+
+.all {
+  font-family: 'Merriweather', sans-serif;
+  margin-right: 250px;
+  margin-left: 250px;
+  transition: var(--transition-effect);
+}
+
+.dark .all {
+  color: #ffffff;
+  transition: var(--transition-effect);
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 100;
+  position: inherit;
+
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.anh_internet {
+  width: 600px;
+  height: 363px;
+  margin-left: 97px;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 13px;
+}
+
+.m1 {
+  font-size: 35px;
+  margin-bottom: 50px;
+  margin-top: 40px;
+  margin-right: 301px;
+  transition: var(--transition-effect);
+}
+.dark .m1{
+  color: #ffffff;
+  transition: var(--transition-effect);
+}
+
+.section {
+  font-size: 10px;
+}
+
+#main1 {
+  font-size: 17px;
+  font-family: 'Merriweather', sans-serif;
+  margin-bottom: 0px;
+  margin-top: -976px;
+}
+
+#main1_update {
+  font-size: 17px;
+  font-family: 'Merriweather', sans-serif;
+  margin-bottom: -148px;
+  margin-top: -797px;
+}
+
+figcaption {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+h1 {
+  color: black;
+}
+
+#main2 {
+  padding-left: 200px;
+  padding-right: 250px;
+  font-size: 17px;
+  opacity: 0.8;
+  margin-right: 280px;
+  margin-left: -351px;
+}
+
+
+
+
+
+
+.o1 {
+  text-align: center;
+}
+
+input.to {
+  font-size: 20px;
+  background: red;
+  color: white;
+  margin-left: 45%;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+input.to:hover {
+  background-color: #FFC0CB;
+}
+
+#q1 {
+  color: #F08080;
+}
+
+input.to1 {
+
+  border: 2px solid #ccc;
+  text-align: center;
+  background-color: #f2f2f2;
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
+}
+
+header {
+  margin-right: 0px
+}
+
+.edit_video {
+
+  margin-left: 800px;
+  height: 0px;
+  width: 0px;
+  margin-bottom: -222px;
+  margin-top: 265px;
+}
+
+.edit_video iframe {
+  height: 176px;
+  width: 311px;
+
+}
+
+.edit_video1 {
+  margin-left: 800px;
+  height: 0px;
+  width: 0px;
+  margin-top: 0px;
+  margin-bottom: 786px
+}
+
+.edit_video1 iframe {
+  height: 176px;
+  width: 311px;
+
+}

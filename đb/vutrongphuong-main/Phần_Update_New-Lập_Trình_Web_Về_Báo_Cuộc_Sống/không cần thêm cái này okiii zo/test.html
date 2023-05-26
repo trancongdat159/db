@@ -1,0 +1,159 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/test.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body> -->
+<!-- <div class="socials-share">
+        <a class="bg-facebook" href=" https://www.facebook.com/sharer/sharer.php?u=http://127.0.0.1:5500/Tintuc.html" target="_blank"><span class="fa fa-facebook"></span> Share</a> -->
+<!-- chèn link liên kết chia sẻ của facebook       ?u là liên kết cần chia sẻ -->
+
+
+<!-- <a class="bg-twitter" href="https://twitter.com/share?text=thong tin danh toi ban&url=http://127.0.0.1:5500/Tintuc.htm" target="_blank"><span class="fa fa-twitter"></span> Tweet</a> -->
+<!-- chèn link chia sẻ của twitter vô đây             url là phần thêm liên kết cần chia sẻ -->
+
+<!-- <a class="bg-pinterest" href="" target="_blank"><span class="fa fa-pinterest"></span> Pin</a> -->
+
+
+<!-- <a class="bg-email" href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to&su=Tin tuc nong hoi&body=http://127.0.0.1:5500/Tintuc.htm" target="_blank"><span class="fa fa-envelope"></span> Gmail</a> -->
+<!-- chèn link chia sẻ của google vo href                tiêu đề (su) còn body là phần liên kết cần chia sẻ -->
+
+<!-- </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Toggle Button</title>
+</head>
+
+<body>
+    <style>
+        :root {
+            --background: aqua;
+            --switch-toggie: rgb(44, 197, 197);
+            --transition-effect: 0.35s cubic-bezier(1, -0.53, .38, 1.54).4s;
+        }
+
+        body {
+            background: #f7f6f6;
+            transition: var(--transition-effect);
+
+        }
+
+        body.dark {
+            background: #0b0909;
+        }
+
+        #wrapper {
+
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 60vh;
+            font-size: 20%;
+        }
+
+        .switch-toggle {
+            width: 44px;
+            height: 26px;
+            appearance: none;
+            background: var(--background);
+            border-radius: 26px;
+            position: relative;
+            cursor: pointer;
+            box-shadow: 0px 0px 16px 0px #0b0909;
+            transition: var(--transition-effect);
+
+        }
+
+        .switch-toggle::before {
+            content: "";
+            width: 22px;
+            height: 22px;
+            background: #b57e7e;
+            position: absolute;
+            border-radius: 50%;
+            left: 3px;
+            top: 2px;
+            box-shadow: 0px 0px 16px 0px #f7f6f6;
+            transition: var(--transition-effect);
+
+        }
+
+        .switch-toggle:checked {
+            background: var(--switch-toggie);
+            box-shadow: 0px 0px 17px 2px #f7f6f6;
+
+        }
+
+        .switch-toggle:checked:before {
+            left: 22px;
+            background: #0b0909;
+            transition: var(--transition-effect);
+        }
+        
+
+        #light-dark {
+            font-size: 20%;
+        }
+    </style>
+
+
+    <div id="wrapper">
+        <input type="checkbox" name="" class="switch-toggle" id="light-dark">
+    </div>
+ <p style = "font-family:courier,arial,helvetica;">
+    𝕭𝖆́𝖔 𝕮𝖚𝖔̣̂𝖈 𝕾𝖔̂́𝖓𝖌 </p>
+
+    <script>
+        var checkbox_toggle = document.getElementById('light-dark');
+
+        checkbox_toggle.addEventListener('change', function () {
+            //them class 
+            document.body.classList.toggle('dark');
+        });
+       
+
+    </script>
+
+</body>
+
+</html>
+
+
+
+<!-- Phần Upadate tất cả logo mới -->
+<div class="logobaocuocsong">
+    <p style = "font-family:courier,arial,helvetica;">
+      𝕭𝖆́𝖔 𝕮𝖚𝖔̣̂𝖈 𝕾𝖔̂́𝖓𝖌 
+    </p>    
+
+    <!-- Phần nút giao diện backgrond -->
+    <div id="wrapper">
+        <input type="checkbox" name="" class="switch-toggle" id="light-dark">
+      </div>
+    
+    <!-- Phần js -->
+      <script>
+        var checkbox_toggle = document.getElementById('light-dark');
+    
+        checkbox_toggle.addEventListener('change', function () {
+          //them class 
+          document.body.classList.toggle('dark');
+        });
+    
+    
+      </script>
+      

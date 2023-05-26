@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+}
+
+#menu ul {
+  margin: -1px;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  display: grid;
+  place-items: center;
+
+
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin-block: 2rem;
+  gap: 2rem;
+  margin-right: 200px;
+  margin-top: 24px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+  box-shadow: 0px 1px 8px 3px #56CCF2;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: clamp(20rem, calc(20rem + 2vw), 22rem);
+  overflow: hidden;
+  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  background: #ECE9E6;
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+  box-shadow: 0px 0px 17px 2px #000000;
+}
+.dark .card{
+  box-shadow: 0px 0px 17px 2px #ffffff;
+
+}
+
+
+
+.card__body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+
+.tag {
+  align-self: flex-start;
+  padding: .25em .75em;
+  border-radius: 1em;
+  font-size: .75rem;
+}
+
+.tag+.tag {
+  margin-left: .5em;
+}
+
+.tag-blue {
+  background: #56CCF2;
+  background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+  color: #fafafa;
+}
+
+.tag-brown {
+  background: #D1913C;
+  background: linear-gradient(to bottom, #FFD194, #D1913C);
+  color: #fafafa;
+}
+
+.tag-red {
+  background: #cb2d3e;
+  background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+  color: #fafafa;
+}
+
+.card__body h4 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.card__footer {
+  display: flex;
+  padding: 1rem;
+  margin-top: auto;
+}
+.input{
+  border-radius: 10px;
+  outline: 2px solid #FEBF00;
+  border: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #e2e2e2;
+  outline-offset: 3px;
+  padding: 0px 0px;
+  transition: 0.25s;
+  
+  
+}
+.input:focus {
+  outline-offset: 5px;
+  background-color: #fff
+}
+.user {
+  display: flex;
+  gap: .5rem;
+}
+
+.user__image {
+  border-radius: 50%;
+}
+
+.user__info>small {
+  color: #666;
+}
+
+.anh_mang_cut {
+  width: 363px;
+  height: 262px;
+}
+
+.anh_mon_an_mang_cut {
+  width: 363px;
+  height: 262px;
+  margin-left: 428px;
+  margin-top: -259px;
+}
+
+/* Phần giao diện nút đổi background */
+:root {
+  --background: aqua;
+  --switch-toggie: rgb(44, 197, 197);
+  --transition-effect:   cubic-bezier(1, -0.53, .38, 1.54).4s;
+}
+
+body {
+  background: #ffffff;
+  transition: var(--transition-effect);
+
+}
+
+body.dark {
+  background: #0b0909;
+}
+
+#wrapper {
+
+  margin-left: 1100px;
+  margin-top: 12px;
+  font-size: 20%;
+}
+
+.switch-toggle {
+  width: 44px;
+  height: 26px;
+  appearance: none;
+  background: var(--background);
+  border-radius: 26px;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0px 0px 16px 0px #0b0909;
+  transition: var(--transition-effect);
+
+}
+
+.switch-toggle::before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  background: #b57e7e;
+  position: absolute;
+  border-radius: 50%;
+  left: 3px;
+  top: 2px;
+  box-shadow: 0px 0px 16px 0px #f7f6f6;
+  transition: var(--transition-effect);
+
+}
+
+.switch-toggle:checked {
+  background: var(--switch-toggie);
+  box-shadow: 0px 0px 17px 2px #f7f6f6;
+
+}
+
+.switch-toggle:checked:before {
+  left: 22px;
+  background: #0b0909;
+  transition: var(--transition-effect);
+
+}
+
+.switch-toggle:checked:before #menu ul li a {
+  left: 22px;
+  background: #0b0909;
+  transition: var(--transition-effect);
+  color: #ffffff;
+}
+
+.dark header {
+  color: #ffffff;
+}
+
+.dark #menu ul li a {
+  color: #FFFFFF;
+}
+
+.dark button.button_login1 {
+  color: #ffffff;
+}
+
+.dark section.design-section {
+  background-color: #0b0909;
+  transition: var(--transition-effect);
+
+}
+
+section.design-section {
+  transition: var(--transition-effect);
+
+}
+
+
+.dark #menu ul li a:hover {
+  background: #b6b6b6;
+  color: red;
+
+
+}
+
+#menu ul li a {
+  text-decoration: none;
+  color: #0C0A0A;
+  display: block;
+  padding-left: 12px;
+  background-color: #FFFFFF;
+  transition: var(--transition-effect);
+}
+
+.dark #menu ul li a {
+  background-color: #000000;
+  color: #FFFFFF;
+  transition: var(--transition-effect);
+}
+
+.logobaocuocsong {
+  transition: var(--transition-effect);
+
+}
+
+.dark .logobaocuocsong {
+  transition: var(--transition-effect);
+
+}
+.khac{
+  transition: var(--transition-effect);
+
+}
+.dark .khac{
+  transition: var(--transition-effect);
+
+}
+
+#light-dark {
+  font-size: 20%;
+}
